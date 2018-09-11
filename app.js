@@ -30,10 +30,7 @@ bot.on('message', message => {
     let args = message.content.slice(config.prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
 
-    let ar
-    
-    
-    gs12 = message.content.split(" ").slicAnnouncemene(1);
+    let args12 = message.content.split(" ").slice(1);
     var saytext = args12.join(" ");
   
   if (!msg.startsWith(config.prefix)) return;
@@ -174,9 +171,8 @@ bot.on('message', message => {
     .setColor("#FF0061")
     .setDescription(saytext)
     .setTimestamp()
-    .setThumbnail("https://i.imgur.com/FTiZhcG.jpg")
-    bot.channels.get("455241441002651658").send(embed)
-    
+    .setFooter("•IP: Pure.rip")
+    bot.channels.get("459991663578972160").send(embed)
     
   }
   
