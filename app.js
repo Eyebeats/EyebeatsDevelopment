@@ -171,7 +171,7 @@ bot.on('message', message => {
     .setColor("#FF0061")
     .setDescription(saytext)
     .setTimestamp()
-    .setFooter("•IP: Pure.rip")
+    .setFooter("IP: Pure.rip")
     bot.channels.get("459991663578972160").send(embed)
     
   }
